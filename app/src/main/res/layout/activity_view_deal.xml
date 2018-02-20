@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/hotel"
+        android:id="@+id/image"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="centerCrop"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/gradient"
+        android:layout_alignBottom="@+id/image"/>
+
+    <ImageView
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/address"
+        android:layout_below="@+id/image"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="15sp"
+        android:id="@+id/pinimg"/>
+
+    <ImageView
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dist"
+        android:id="@+id/distimg"
+        android:layout_below="@+id/address"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="15sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#999"
+        android:layout_below="@+id/viewOnMap"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:id="@+id/hr1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hr1"
+        android:layout_centerHorizontal="true"
+        android:text="Call Us"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:layout_marginTop="10sp"
+        android:textColor="#4d2464"
+        android:id="@+id/callUs"/>
+    <ImageView
+        android:layout_width="15sp"
+        android:layout_height="15sp"
+        android:layout_below="@+id/hr1"
+        android:layout_marginTop="12sp"
+        android:layout_marginRight="5sp"
+        android:layout_centerHorizontal="true"
+        android:layout_toLeftOf="@+id/callUs"
+        android:src="@drawable/phone"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#555"
+        android:layout_below="@+id/callUs"
+        android:layout_marginTop="10sp"
+        android:id="@+id/hr2"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10sp"
+        android:background="#ccc"
+        android:layout_below="@+id/hr2"
+        android:id="@+id/hr3"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19sp"
+        android:layout_marginLeft="50sp"
+        android:textSize="14sp"
+        android:layout_below="@+id/address"
+        android:id="@+id/distKm"
+        android:textColor="#555"
+        android:text="Km"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19sp"
+        android:layout_marginLeft="15sp"
+        android:layout_toRightOf="@id/distKm"
+        android:textSize="12sp"
+        android:layout_below="@+id/address"
+        android:id="@+id/viewOnMap"
+        android:textColor="#555"
+        android:text="View on Google Map"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Hotel Name"
+        android:layout_marginLeft="30sp"
+        android:textSize="32sp"
+        android:id="@+id/hotel"
+        android:textColor="#fff"
+        android:layout_marginTop="15sp"
+        android:layout_alignBottom="@+id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18sp"
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="15sp"
+        android:text="Address"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:id="@+id/address"
+        android:layout_below="@+id/hotel"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15sp"
+    android:text="About the Deal"
+    android:layout_below="@+id/hr3"
+    android:textColor="#000"
+    android:textSize="18sp"
+    android:id="@+id/abtDeal"
+    android:layout_marginLeft="15sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="10sp"
+        android:layout_below="@+id/abtDeal"
+        android:text="ItemName"
+        android:textColor="#000"
+        android:id="@+id/itemnamee"/>
+
+    <TextView
+        android:layout_width="18sp"
+        android:layout_height="18sp"
+        android:textSize="8sp"
+        android:layout_below="@+id/abtDeal"
+        android:layout_marginTop="10sp"
+        android:text=""
+        android:id="@+id/btnminus"
+        android:layout_toLeftOf="@+id/number"
+        android:layout_marginRight="5sp"
+        android:textColor="#fff"
+        android:background="@drawable/leftpoint"/>
+
+    <TextView
+        android:layout_width="18sp"
+        android:layout_height="18sp"
+        android:textSize="8sp"
+        android:layout_below="@+id/abtDeal"
+        android:layout_marginTop="10sp"
+        android:text=""
+        android:id="@+id/btnplus"
+        android:textColor="#fff"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25sp"
+        android:background="@drawable/rightpoint"/>
+    <TextView
+        android:text="0"
+        android:layout_below="@+id/abtDeal"
+        android:layout_marginTop="10sp"
+        android:id="@+id/number"
+        android:textColor="#4d2464"
+        android:layout_toLeftOf="@+id/btnplus"
+        android:layout_marginRight="5sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Details"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:id="@+id/details"
+        android:textColor="#222"
+        android:textSize="14sp"
+        android:layout_below="@+id/itemnamee"/>
+
+
+    <ImageView
+        android:layout_width="16sp"
+        android:layout_height="16sp"
+        android:scaleType="centerCrop"
+        android:id="@+id/categoryimg"
+        android:layout_below="@+id/details"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="10sp"
+        android:src="@drawable/catfoodblack"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textSize="14sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="38sp"
+        android:layout_below="@+id/details"
+        android:textColor="#222"
+        android:id="@+id/category"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="50dp"
+        android:background="#6f3291"
+        android:textColor="#fff"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="42dp"
+            android:background="#6f3291"
+            android:textColor="#fff"
+            android:textSize="32dp"
+
+            android:text="@string/Rs"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="4dp"
+
+            />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="42dp"
+        android:background="#6f3291"
+        android:textColor="#fff"
+        android:textSize="32dp"
+        android:id="@+id/amount"
+
+        android:layout_marginLeft="45dp"
+        android:layout_marginBottom="4dp"
+
+        />
+
+
+        <ImageView
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:src="@drawable/purplecart"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/buy"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="19dp" />
+
+</RelativeLayout>

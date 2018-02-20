@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4d2464"
+    tools:context="com.example.mit.dealfind.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/dflogo"
+        android:id="@+id/dflogo"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/dflogo"
+        android:text="Please Enter Your Contact Number"
+        android:id="@+id/text"
+        android:textSize="16sp"
+        android:textColor="#fff"/>
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:textSize="14sp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#f4f4f4"
+        android:id="@+id/editTextId"
+        android:inputType="phone"
+        android:digits="0123456789"
+        android:background="@drawable/border"
+
+        android:textAlignment="center"
+
+        android:maxLength="10"
+        />
+
+    <Button
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="Get OTP"
+        android:layout_below="@+id/editTextId"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:layout_marginTop="125dp"
+        android:background="@drawable/buttonborder"
+        android:id="@+id/button"
+        />
+
+    <Button
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="Wait for 2 mins"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/buttonborder"
+        android:id="@+id/resend"
+        android:visibility="gone"
+        />
+
+
+
+</RelativeLayout>

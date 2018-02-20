@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#4d2464">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:textColor="#fff"
+            android:text="Deal Found"
+            android:fontFamily="sans-serif-smallcaps"
+            android:id="@+id/dealfound"/>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/dealfound"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/tickk"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tickkk"/>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/tickkk"
+        android:id="@+id/qrcode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:id="@+id/code"
+        android:layout_below="@+id/qrcode"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/code"
+        android:id="@+id/desc"
+        android:textAlignment="center"
+        android:text=""/>
+
+</RelativeLayout>
